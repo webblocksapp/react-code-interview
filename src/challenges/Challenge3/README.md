@@ -19,7 +19,7 @@ Steps:
 3. Redux pattern requirement:
 
 - Add the missing payload types to the actions hooks.
-- Connect the country and user reducers with the global redux state.
+- Connect the user reducers with the global redux state.
 
 4. Complete the crud methods on the component.
 5. Modified users data must be visible on the table from what is on the redux store.
