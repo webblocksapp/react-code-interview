@@ -1,25 +1,33 @@
-Endpoints:
-http://localhost:4200/countries
-http://localhost:4200/users
+# Challenge 3
 
-Steps:
+The challenge 3 is the same requirement as challenge 2 but now you need to
+add the same property palette by creating a high order component called
+withButtonPalette.
 
-1. Complete the custom hook useCountryApiClient at src/challenges/Challenge3/api-clients
+- Requirements:
 
-- Use axios for the list method.
-- All the methods must be correctly typed.
-- It must return a list method for getting all the countries.
+  - Create the HoC component called withButtonPalette at src/challenges/Challenge2/hocs
+  - palette prop must only allow dark or light.
+  - Palettes are found at src/index.css
 
-2. Complete the custom hook useUserApiClient at src/challenges/Challenge3/api-clients
+- Expected implementation:
 
-- Use axios for each methods.
-- It must return only list (GET), and update (PUT) methods.
-- All the methods must be correctly typed.
+```typescript
+ const Button = withButtonPalette(MuiButton);
 
-3. Redux pattern requirement:
+ <Button palette="dark">
+   Hello world
+ </Button>
 
-- Add the missing payload types to the actions hooks.
-- Connect the user reducers with the global redux state.
+<Button palette="light">
+   Hello world
+ </Button>
 
-4. Complete the crud methods on the component.
-5. Modified users data must be visible on the table from what is on the redux store.
+//This implementation wouldn't be allowed by the code editor.
+<Button palette="other">
+   Hello world
+</Button>
+```
+
+- You can refer to MUI 4 docs at the following link:
+- https://v4.mui.com/components/buttons/#button

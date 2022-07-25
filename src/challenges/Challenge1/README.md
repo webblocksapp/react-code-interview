@@ -1,31 +1,27 @@
 # Challenge 1
 
-The customer asks to enhance the current existing material ui Button component
-to support an additional property called palette, this property will take
-care of the button styles.
+Endpoints:
+http://localhost:4200/users
 
-- Requirements:
+Steps:
 
-  - Create an enhanced Button component at src/challenges/Challenge1/components
-    by inheriting the current existing props of the original material ui Button.
-  - palette prop must only allow dark or light.
-  - Palettes are found at src/index.css
+1. Define the types at types folder for:
 
-- Expected implementation:
+- The user entity
+- The user actions
+- The redux Root state
 
-```typescript
-  <Button palette="dark">
-    Hello world
-  </Button>
+2. Type the payloads at useUserActions hook.
+3. At userReducer
 
-  <Button palette="light">
-    Hello world
-  </Button>
+- Type the initial state
+- Type the action
+- Complete the pending reducer cases.
 
-  //This implementation wouldn't be allowed by the code editor.
-  <Button palette="other">
-    Hello world
-  </Button>
-```
+4. Complete the custom hook useUserApiClient at src/challenges/Challenge3/api-clients
 
-- You can refer to MUI 4 docs at the [following link](https://v4.mui.com/components/buttons/#button)
+- Use axios for each methods.
+- It must return only list (GET), and update (PUT) methods.
+- All api responses must be correctly typed.
+
+5. Complete the methods at UsersTable component for list and update.

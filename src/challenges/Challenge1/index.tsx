@@ -1,12 +1,12 @@
 import React from "react";
-import { Button } from "@material-ui/core";
+import { Provider } from "react-redux";
+import { store } from "./store";
+import { UsersTable } from "./UsersTable";
 
 export const Challenge1 = () => {
   return (
-    <>
-      <Button variant="contained" color="primary">
-        Hello world
-      </Button>
-    </>
+    <Provider store={store}>
+      <UsersTable />
+    </Provider>
   );
 };
