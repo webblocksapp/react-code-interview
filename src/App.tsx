@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, useRoutes } from "react-router-dom";
-import { Challenge1, Challenge2 } from "./challenges";
+import { Challenge1, Challenge2, Challenge3 } from "./challenges";
 
 export const App = () => (
   <>
@@ -12,6 +12,7 @@ export const App = () => (
     {useRoutes([
       { path: "challenge-one", element: <Challenge1 /> },
       { path: "challenge-two", element: <Challenge2 /> },
+      { path: "challenge-three", element: <Challenge3 /> },
     ])}
   </>
 );

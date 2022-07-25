@@ -9,3 +9,22 @@
   border: 1px solid black;
   color: black;
 }
+
+table {
+  font-family: arial;
+  border: 1px solid black;
+  margin: 10px 0px;
+}
+
+table th,
+table td {
+  padding: 10px;
+}
+
+table th {
+  font-size: 16px;
+}
+
+table td {
+  font-size: 14px;
+}
