@@ -1,31 +1,9 @@
 {
-  "countries": [
-    {
-      "id": 1,
-      "name": "Colombia"
-    },
-    {
-      "id": 2,
-      "name": "Argentina"
-    },
-    {
-      "id": 3,
-      "name": "EEUU"
-    },
-    {
-      "id": 4,
-      "name": "México"
-    },
-    {
-      "id": 5,
-      "name": "Venezuela"
-    }
-  ],
   "users": [
-    { "id": 1, "name": "John", "countryId": 3 },
-    { "id": 2, "name": "Victor", "countryId": 5 },
-    { "id": 3, "name": "Laura", "countryId": 1 },
-    { "id": 4, "name": "Raul", "countryId": 4 },
-    { "id": 5, "name": "Felipe", "countryId": 5 }
+    { "id": 1, "name": "John" },
+    { "id": 2, "name": "Victor" },
+    { "id": 3, "name": "Laura" },
+    { "id": 4, "name": "Raul" },
+    { "id": 5, "name": "Felipe" }
   ]
 }
