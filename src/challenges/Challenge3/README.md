@@ -4,18 +4,17 @@ http://localhost:4200/users
 
 Steps:
 
-1. Create a custom hook useCountryApiClient at src/challenges/Challenge3/api-clients
+1. Complete the custom hook useCountryApiClient at src/challenges/Challenge3/api-clients
 
-- Use axios when creating the hook.
+- Use axios for the list method.
 - All the methods must be correctly typed.
 - It must return a list method for getting all the countries.
 
-2. Create a custom hook useUserApiClient at src/challenges/Challenge3/api-clients
+2. Complete the custom hook useUserApiClient at src/challenges/Challenge3/api-clients
 
-- Use axios when creating the hook.
-- It must return list, create, update and remove methods for getting all API crud operations.
+- Use axios for each methods.
+- It must return only list (GET), and update (PUT) methods.
 - All the methods must be correctly typed.
-- (Optional as plus) Implement patch method.
 
 3. Redux pattern requirement:
 

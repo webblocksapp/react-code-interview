@@ -3,34 +3,26 @@ import { Provider } from "react-redux";
 import { store } from "./store";
 
 export const Challenge3 = () => {
-  const createUser = () => {
+  const list = () => {
     /**
-     * Must add to the redux state the created user, and
-     * data must persist on the backend.
+     * Must list all the users.
      */
   };
 
-  const updateUser = () => {
+  const update = () => {
     /**
      * Must update the redux state for the existing user, and
      * updated data must persist on the backend.
      */
   };
 
-  const removeUser = () => {
-    /**
-     * Must remove from the redux state the existing user, and
-     * record deletion must persist on the backend.
-     */
-  };
-
-  const sortAscUsers = () => {
+  const sortAsc = () => {
     /**
      * Must sort the users in asc order
      */
   };
 
-  const sortDescUsers = () => {
+  const sortDesc = () => {
     /**
      * Must sort the users in desc order
      */
@@ -39,9 +31,8 @@ export const Challenge3 = () => {
   return (
     <Provider store={store}>
       <div style={{ marginTop: 30 }}>
-        <button onClick={createUser}>Create</button>
-        <button onClick={sortAscUsers}>Sort Asc</button>
-        <button onClick={sortDescUsers}>Sort Desc</button>
+        <button onClick={sortAsc}>Sort Asc</button>
+        <button onClick={sortDesc}>Sort Desc</button>
         <br />
         <table>
           <thead>
@@ -58,8 +49,7 @@ export const Challenge3 = () => {
               <td>John</td>
               <td>EEUU</td>
               <td>
-                <button onClick={updateUser}>Edit</button>
-                <button onClick={removeUser}>Remove</button>
+                <button onClick={update}>Edit</button>
               </td>
             </tr>
           </tbody>
